@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Rubik&family=Secular+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.principal {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    padding-left: 30rem;
+}
+
+.logo {
+    width: 30px;
+    height: 15px, auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo h3 {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.principal .menu {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.principal .menu li a {
+    padding: 3rem 1rem 2rem 1rem;
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.principal .menu li a:hover{
+    background-color: black;
+    border-bottom: 4px solid yellow;
+    color: yellow;
+}
+
+.primeira-sessao {
+    height: 100vh;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(./imagens/espeto.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.primeira-sessao .conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.primeira-sessao h1 {
+    color: yellowgreen;
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.primeira-sessao h2 {
+    color: whitesmoke;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.btn button {
+    width: 230px;
+    height: 60px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: yellowgreen;
+    border-radius: 10px;
+    color: black;
+    font-weight: 700;
+    margin-top: 5rem;
+    transition: all 400ms ease-in;
+}
+
+.btn button:hover{
+    border: 1px solid yellowgreen;
+    background-color: transparent;
+    color: blue;
+
+}
+
+.btn {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre-nos {
+    background-color: gray;
+    width: 100%;
+    padding-bottom: 5rem;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-nos img {
+    width: 450px;
+    height: 450px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border: 2px solid rgba(155, 155, 155);
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudosobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudosobre h2 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+.conteudosobre p{
+    text-align: center;
+    font-size: 2rem;
+    width: 600px;
+}
+
+.cardapio {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(29, 29, 29, 0.8);
+    padding-top: 15px;
+}
+
+.cardapio h2 {
+    font-size: 5rem;
+    color: aliceblue;
+    text-transform: initial;
+
+}
+
+.itenscardapio {
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.itenscardapio .informacao {
+    background-color: rgb(221, 221, 221);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.itenscardapio .informacao h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itenscardapio .informacao h4 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 150px 150px;
+    margin-left: 6rem;
+}
+
+.itenscardapio .informacao h4 span {
+    font-size: 1.6rem;
+    color: gray;
+    margin-left: 1.5rem;
+    text-decoration: underline;
+}
+
+.itenscardapio div {
+    background-color: gray;
+    box-shadow: 0px 0px 4px 1px;
+}
+
+
+.itenscardapio img {
+    width: 100%;
+    height: 200px;
+}
+
+.contatos {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: aliceblue;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+}
+
+
+
+
